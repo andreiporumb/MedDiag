@@ -18,11 +18,15 @@ import { HomeContentComponent } from './components/home-content/home-content.com
 import { LoadingComponent } from './components/loading/loading.component';
 import { DiagnoseComponent } from './diagnose/diagnose.component';
 
+
+
 export function hljsLanguages() {
   return [{ name: 'json', func: json }];
 }
 
 const appRoutes: Routes = [ { path: 'diagnose', component: DiagnoseComponent }];
+
+
 
 @NgModule({
   declarations: [
@@ -52,4 +56,6 @@ const appRoutes: Routes = [ { path: 'diagnose', component: DiagnoseComponent }];
   providers: [],
   bootstrap: [AppComponent]
 })
+
+
 export class AppModule { }
