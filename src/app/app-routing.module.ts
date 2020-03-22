@@ -4,6 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { AuthGuard } from './auth/auth.guard';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { DiagnoseComponent } from './diagnose/diagnose.component';
+import { SexchooseComponent} from './sexchoose/sexchoose.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,11 @@ const routes: Routes = [
   {
     path:'diagnose',
     component: DiagnoseComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path:'gender-age',
+    component: SexchooseComponent,
     canActivate: [AuthGuard]
   }
 ];

@@ -17,6 +17,7 @@ import { HeroComponent } from './components/hero/hero.component';
 import { HomeContentComponent } from './components/home-content/home-content.component';
 import { LoadingComponent } from './components/loading/loading.component';
 import { DiagnoseComponent } from './diagnose/diagnose.component';
+import { SexchooseComponent } from './sexchoose/sexchoose.component';
 
 
 
@@ -38,7 +39,8 @@ const appRoutes: Routes = [ { path: 'diagnose', component: DiagnoseComponent }];
     HeroComponent,
     HomeContentComponent,
     LoadingComponent,
-    DiagnoseComponent
+    DiagnoseComponent,
+    SexchooseComponent
   ],
   imports: [
     BrowserModule,

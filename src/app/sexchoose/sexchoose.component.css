@@ -1,0 +1,297 @@
+.card {
+   
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+    margin: 0 auto;
+
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+:root{
+    --borderColor: #525252;
+    --lightGray: #e9e9e9;
+  }
+  body{
+    display: grid;
+    justify-content: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #f5f5f5;
+    color: #535353;
+  }
+  .card{
+    width:250px;
+    height: 450px;
+    position: relative;
+    margin-top: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, .2);
+    overflow: hidden;
+  }
+  .heading{
+    margin-top: 25px;
+  }
+  
+  
+  .person{
+    width: 130px;
+    height: 240px;
+    margin:10px 0 50px 0;
+    position: relative;
+  }
+  .head{
+    width: 40px;
+    height: 40px;
+    position:absolute;
+    left: 43px;
+    border-radius: 50%;
+    border: 3px solid var(--borderColor);
+    background-color: #b1b1b1;
+  }
+  
+  
+  
+  
+  .lh{
+   left: 21px;
+  }
+  .rh{
+    left: 94px;
+    transform: rotate(-6deg);
+  }
+  .body{
+    width:52px;
+    height: 60px;
+    position: absolute;
+    top:157px;
+    left: 100px;
+    box-sizing: border-box;
+    background-color: var(--lightGray);
+    overflow: hidden;
+  /*   outline: 1px solid black; */
+  }
+  .body::before,.body::after{
+    content: '';
+    width: 30px;
+    height: 50px;
+    border-radius: 0%;
+    position: absolute;
+    top:0px;
+    background-color: #ffffff;
+    border: 3px solid var(--borderColor);
+    z-index: 1;
+    transition: all .7s cubic-bezier(.85,-0.7,.36,1.66);
+  }
+  .body::before{
+    left:-28px;
+  }
+  .body::after{
+    left:43px;
+  }
+  .pants{
+    position: absolute;
+    top: 210px;
+    left: 99px;
+    z-index: 3;
+    width: 54px;
+    border-bottom: 54px solid var(--borderColor);
+  }
+  .pants::before{
+    content: '';
+    position: absolute;
+    top:3px;
+    left:3px;
+    width: 48px;
+    border-bottom: 48px solid #b1b1b1;
+  }
+  
+  
+  .right{
+  left: 68px;
+  }
+  .floor{
+    width: 110px;
+    height: 5px;
+    position: absolute;
+    top: 235px;
+    left:10px;
+    border-radius: 50px;
+    background-color: var(--borderColor);
+  }
+  
+  
+  input[type=radio]{
+    display: none;
+  }
+  .radio-buttons{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #dad8d8;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 1.5em;
+  }
+  .labels{
+    width: 100px;
+    text-align: center;
+    cursor:pointer;
+  }
+  #boy:checked + label,#girl:checked + label{
+    color: #0066f9;
+  }
+  
+  #girl:checked+label .top{
+    top: 157px;
+  }
+  
+  #girl:checked+label .body::before, #girl:checked+label .body::after{
+    border-radius: 50% / 90%;
+  }
+  
+  #girl:checked+label .pants{
+    left: 90.5px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent; 
+  }
+  #girl:checked+label .pants::before{
+    left: -4px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+  }
+  .star-svg{
+    width: 125px;
+    height: 125px;
+    fill: #ececec;
+    position: absolute;
+    top: 200px;
+    left: -60px;
+  }
+  .two{
+    top: 80px;
+    left:180px;
+  }
+
+
+  input {
+    display: block;
+    margin-top: 1em auto;
+    border: none;
+    padding: 0;
+    width: 3ch;
+    background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.5ch) 0 100%/ 2.5ch 2px no-repeat;
+    font: 5ch droid sans mono, consolas, monospace;
+    letter-spacing: 0.5ch;
+}
+input:focus {
+    outline: none;
+    color: #0066f9;
+}
+
+
+a {
+    border: 4px solid #3F3F3F;
+    color: #3F3F3F;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    margin: auto;
+    padding: 12px 32px 12px 82px;
+    position: relative;
+    text-decoration: none;
+}
+
+a .label,
+a .icon-arrow {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    perspective: 1000;
+}
+
+a .label {
+    display: inline-block;
+    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+a .icon-arrow {
+    fill: #3F3F3F;
+    height: 15px;
+    top: 17px;
+    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1), opacity .4s cubic-bezier(0.86, 0, 0.07, 1);
+    width: 35px;
+}
+
+a .icon-arrow.before {
+    left: 32px;
+    margin-right: 15px;
+    position: absolute;
+    transform-origin: left center;
+}
+
+a .icon-arrow.after {
+    margin-left: 15px;
+    opacity: 0;
+    position: absolute;
+    right: 32px;
+    transform: translateX(75%) scaleX(0.1);
+    transform-origin: right center;
+}
+
+a:hover .label {
+    transform: translateX(-52px);
+}
+
+a:hover .icon-arrow.before {
+    opacity: 0;
+    transform: translateX(-75%) scaleX(0.1);
+}
+
+a:hover .icon-arrow.after {
+    opacity: 1;
+    transform: translateX(0) scaleX(1);
+}
+
+a:active {
+    border-color: #0066f9;
+    color: #0066f9;
+}
+
+a:active .icon-arrow {
+    fill: #0066f9;
+}
