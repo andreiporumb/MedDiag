@@ -5,6 +5,7 @@ import { AuthGuard } from './auth/auth.guard';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { DiagnoseComponent } from './diagnose/diagnose.component';
 import { SexchooseComponent} from './sexchoose/sexchoose.component';
+import { SearchSymptomComponent } from '../../search-symptom/search-symptom.component';
 
 
 const routes: Routes = [
@@ -26,6 +27,11 @@ const routes: Routes = [
   {
     path:'gender-age',
     component: SexchooseComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path:'symptom-choose',
+    component: SearchSymptomComponent,
     canActivate: [AuthGuard]
   }
 ];
