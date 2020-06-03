@@ -18,6 +18,9 @@ import { HomeContentComponent } from './components/home-content/home-content.com
 import { LoadingComponent } from './components/loading/loading.component';
 import { DiagnoseComponent } from './diagnose/diagnose.component';
 import { SexchooseComponent } from './sexchoose/sexchoose.component';
+import { SearchSymptomComponent } from '../../search-symptom/search-symptom.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -40,12 +43,15 @@ const appRoutes: Routes = [ { path: 'diagnose', component: DiagnoseComponent }];
     HomeContentComponent,
     LoadingComponent,
     DiagnoseComponent,
-    SexchooseComponent
+    SexchooseComponent,
+    SearchSymptomComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    Ng2SearchPipeModule,
+    FormsModule,
     HighlightModule.forRoot({
       languages: hljsLanguages
     }),
