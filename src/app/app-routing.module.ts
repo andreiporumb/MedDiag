@@ -6,6 +6,8 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { DiagnoseComponent } from './diagnose/diagnose.component';
 import { SexchooseComponent} from './sexchoose/sexchoose.component';
 import { SearchSymptomComponent } from '../../search-symptom/search-symptom.component';
+import { FormComponent} from './form/form.component';
+
 
 
 const routes: Routes = [
@@ -32,6 +34,11 @@ const routes: Routes = [
   {
     path:'symptom-choose',
     component: SearchSymptomComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path:'form-question=1&sympthomId=2',
+    component: FormComponent,
     canActivate: [AuthGuard]
   }
 ];
