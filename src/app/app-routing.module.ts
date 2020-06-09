@@ -6,7 +6,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { DiagnoseComponent } from './diagnose/diagnose.component';
 import { SexchooseComponent} from './sexchoose/sexchoose.component';
 import { SearchSymptomComponent } from '../../search-symptom/search-symptom.component';
-import { FormComponent} from './form/form.component';
+import { FormComponent} from './form.component';
 
 
 
