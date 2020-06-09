@@ -4,19 +4,28 @@
   <div class="container">
     <div class="row">
       <div class="search-hero">
-        <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="&#61442;  Start searching for a symptom">
+        <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="false" placeholder="...or search here">
       </div>
       <table class="table table-striped">
         <thead>
         <tr>
           <th>Id</th>
           <th>Symptom</th>
+          <th></th>
         </tr>
         </thead>
         <tbody>
         <tr *ngFor="let hero of heroes | filter:searchText">
           <td>{{hero.id}}</td>
           <td>{{hero.name}}</td>
+          <td>                <a routerLink = "/form-question=1&sympthomId=2">
+
+            <button [disabled]="hero.id!=2 ? 'disabled': null" class="button button2">Select sympthom
+            </button></a>
+
+           
+
+          </td>
         </tr>
         </tbody>
       </table>
