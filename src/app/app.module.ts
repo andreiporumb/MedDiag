@@ -21,6 +21,7 @@ import { SexchooseComponent } from './sexchoose/sexchoose.component';
 import { SearchSymptomComponent } from '../../search-symptom/search-symptom.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FormsModule } from '@angular/forms';
+import { FormComponent } from './form.component'
 
 
 
@@ -44,7 +45,8 @@ const appRoutes: Routes = [ { path: 'diagnose', component: DiagnoseComponent }];
     LoadingComponent,
     DiagnoseComponent,
     SexchooseComponent,
-    SearchSymptomComponent
+    SearchSymptomComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
