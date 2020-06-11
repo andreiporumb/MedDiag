@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-form',
-  templateUrl: './form.component.html',
-  styleUrls: ['./form.component.css']
+  selector: 'app-form4',
+  templateUrl: './form4.component.html',
+  styleUrls: ['./form4.component.css']
 })
-export class FormComponent implements OnInit {
+export class Form4Component implements OnInit {
 
   selectedValue: number;
 
@@ -43,4 +43,5 @@ if(this.selectedValue==4)
     
 
  }
+
 }

@@ -1,0 +1,102 @@
+<div class="courses-container container">
+    <div class="course">
+          <div class="course-preview">
+              <h6>Cough</h6>
+        <h5>MedDiag</h5>			<a href="#">< Back <i class="fas fa-chevron-right"></i></a>
+          </div>
+          <div class="course-info">
+              <div class="progress-container">
+                  <div class="progress"></div>
+                  <span class="progress-text">
+                      Question 2/5
+                  </span>
+              </div>
+              <h6>Question 2</h6>
+              <h2>How long have you had a cough?
+  
+        </h2>
+  
+        <div>
+          <label class="radio">
+              <input type="radio" name="r" value="1" (change)="onItemChange($event.target.value)">
+              <span>Less than 3 weeks</span>
+          </label>
+          <label class="radio">
+              <input type="radio" name="r" value="2" (change)="onItemChange($event.target.value)">
+              <span>Between 3 and 8 weeks</span>
+          </label>
+          <label class="radio">
+              <input type="radio" name="r" value="3" (change)="onItemChange($event.target.value)">
+              <span>More than 8 weeks</span>
+          </label>
+         
+      </div>
+      
+      <!-- twitter -->
+  
+              <button class="btn" (click)="onContinue()">Continue</button>
+          </div>
+      </div>
+  </div>
+  
+  <!-- SOCIAL PANEL HTML -->
+  <div class="social-panel-container">
+      <div class="social-panel">
+          <p>Created with <i class="fa fa-heart"></i> by
+              <a target="_blank" href="https://florin-pop.com">Florin Pop</a></p>
+          <button class="close-btn"><i class="fas fa-times"></i></button>
+          <h4>Get in touch on</h4>
+          <ul>
+              <li>
+                  <a href="https://www.patreon.com/florinpop17" target="_blank">
+                      <i class="fab fa-discord"></i>
+                  </a>
+              </li>
+              <li>
+                  <a href="https://twitter.com/florinpop1705" target="_blank">
+                      <i class="fab fa-twitter"></i>
+                  </a>
+              </li>
+              <li>
+                  <a href="https://linkedin.com/in/florinpop17" target="_blank">
+                      <i class="fab fa-linkedin"></i>
+                  </a>
+              </li>
+              <li>
+                  <a href="https://facebook.com/florinpop17" target="_blank">
+                      <i class="fab fa-facebook"></i>
+                  </a>
+              </li>
+              <li>
+                  <a href="https://instagram.com/florinpop17" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+  <button class="floating-btn">
+      Get in Touch
+  </button>
+  
+  
+  
+  
+  <script>
+  // INSERT JS HERE
+  
+  
+  // SOCIAL PANEL JS
+  const floating_btn = document.querySelector('.floating-btn');
+  const close_btn = document.querySelector('.close-btn');
+  const social_panel_container = document.querySelector('.social-panel-container');
+  
+  floating_btn.addEventListener('click', () => {
+      social_panel_container.classList.toggle('visible')
+  });
+  
+  close_btn.addEventListener('click', () => {
+      social_panel_container.classList.remove('visible')
+  });
+    </script>
+  

@@ -21,7 +21,14 @@ import { SexchooseComponent } from './sexchoose/sexchoose.component';
 import { SearchSymptomComponent } from '../../search-symptom/search-symptom.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FormsModule } from '@angular/forms';
-import { FormComponent } from './form.component'
+import { FormComponent } from './form.component';
+import { Form2Component } from './form2/form2.component';
+import { Form3Component } from './form3/form3.component';
+import { Form4Component } from './form4/form4.component';
+import { Form5Component } from './form5/form5.component';
+import { Form22Component } from './form22/form22.component';
+import { Form222HeartAttackComponent } from './form222-heart-attack/form222-heart-attack.component';
+import { Form222WetCoughComponent } from './form222-wet-cough/form222-wet-cough.component'
 
 
 
@@ -46,7 +53,14 @@ const appRoutes: Routes = [ { path: 'diagnose', component: DiagnoseComponent }];
     DiagnoseComponent,
     SexchooseComponent,
     SearchSymptomComponent,
-    FormComponent
+    FormComponent,
+    Form2Component,
+    Form3Component,
+    Form4Component,
+    Form5Component,
+    Form22Component,
+    Form222HeartAttackComponent,
+    Form222WetCoughComponent
   ],
   imports: [
     BrowserModule,

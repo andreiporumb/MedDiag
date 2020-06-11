@@ -18,26 +18,26 @@
 
       <div>
         <label class="radio">
-            <input type="radio" name="r" value="1" checked>
+            <input type="radio" name="r" value="1" (change)="onItemChange($event.target.value)">
             <span>Runny nose</span>
         </label>
         <label class="radio">
-            <input type="radio" name="r" value="2">
+            <input type="radio" name="r" value="2" (change)="onItemChange($event.target.value)">
             <span>Shortness of breath</span>
         </label>
         <label class="radio">
-            <input type="radio" name="r" value="3">
+            <input type="radio" name="r" value="3" (change)="onItemChange($event.target.value)">
             <span>Headache</span>
         </label>
         <label class="radio">
-          <input type="radio" name="r" value="4">
+          <input type="radio" name="r" value="4" (change)="onItemChange($event.target.value)">
           <span>Fever</span>
       </label>
     </div>
     
     <!-- twitter -->
 
-			<button class="btn">Continue</button>
+			<button class="btn" (click)="onContinue()">Continue</button>
 		</div>
 	</div>
 </div>
