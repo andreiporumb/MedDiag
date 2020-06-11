@@ -31,62 +31,62 @@ const routes: Routes = [
   {
     path:'diagnose',
     component: DiagnoseComponent,
-    //canActivate: [AuthGuard]
+    canActivate: [AuthGuard]
   },
   {
     path:'gender-age',
     component: SexchooseComponent,
-    //canActivate: [AuthGuard]
+    canActivate: [AuthGuard]
   },
   {
     path:'symptom-choose',
     component: SearchSymptomComponent,
-    //canActivate: [AuthGuard]
+    canActivate: [AuthGuard]
   },
   {
     path:'form-question=1&sympthomId=2',
     component: FormComponent,
-    //canActivate: [AuthGuard]
+    canActivate: [AuthGuard]
   }
   ,
   {
     path:'form-question=2&sympthomId=1',
     component: Form2Component,
-    //canActivate: [AuthGuard]
+    canActivate: [AuthGuard]
   }
   ,
   {
     path:'form-question=2&sympthomId=2',
     component: Form3Component,
-    //canActivate: [AuthGuard]
+    canActivate: [AuthGuard]
   }
   ,
   {
     path:'form-question=2&sympthomId=3',
     component: Form4Component,
-    //canActivate: [AuthGuard]
+    canActivate: [AuthGuard]
   }
   ,
   {
     path:'form-question=2&sympthomId=4',
     component: Form5Component,
-    //canActivate: [AuthGuard]
+    canActivate: [AuthGuard]
   }
   ,
   {
     path:'form-question=3&sympthomId=1',
     component: Form22Component,
-    //canActivate: [AuthGuard]
+    canActivate: [AuthGuard]
   },
   {
     path:'form-question=4&sympthomId=1',
     component: Form222HeartAttackComponent,
-    //canActivate: [AuthGuard]
+    canActivate: [AuthGuard]
   },
   {
     path:'form-question=4&sympthomId=2',
     component: Form222WetCoughComponent,
-    //canActivate: [AuthGuard]
+    canActivate: [AuthGuard]
   }
   
 ];
