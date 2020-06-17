@@ -26,11 +26,15 @@ export class Form222HeartAttackComponent implements OnInit {
 console.log(this.selectedValue);
 if(this.selectedValue==1)
 {
-  this.router.navigate(['/form-question=4&sympthomId=1']);
+ sessionStorage.setItem("Answer_4","Yes, I had a heart attack");
+
+  this.router.navigate(['/form-question=5&sympthomId=1']);
 }
 if(this.selectedValue==2)
 {
-  this.router.navigate(['/form-question=4&sympthomId=2']);
+  sessionStorage.setItem("Answer_4","No, I haven't got any heart attacks");
+
+  this.router.navigate(['/form-question=5&sympthomId=1']);
 }
 
 

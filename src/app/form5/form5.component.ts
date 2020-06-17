@@ -25,20 +25,24 @@ export class Form5Component implements OnInit {
   onContinue(){
 console.log(this.selectedValue);
 if(this.selectedValue==1)
-{
+{  sessionStorage.setItem("Answer_2","Between 98.6 and 100.4 °F or 37 and 38 °C");
+
   this.router.navigate(['/form-question=2&sympthomId=1']);
 }
 if(this.selectedValue==2)
-{
-  this.router.navigate(['/form-question=2&sympthomId=2']);
+{  sessionStorage.setItem("Answer_2","Between 100.4 and 104 °F or 38 and 40 °C");
+
+  this.router.navigate(['/form-question=2&sympthomId=1']);
 }
 if(this.selectedValue==3)
-{
-  this.router.navigate(['/form-question=2&sympthomId=3']);
+{  sessionStorage.setItem("Answer_2","Greater than 104 °F or 40 °C");
+
+  this.router.navigate(['/form-question=2&sympthomId=1']);
 }
 if(this.selectedValue==4)
-{
-  this.router.navigate(['/form-question=2&sympthomId=4']);
+{  sessionStorage.setItem("Answer_2","I haven’t checked my temperature");
+
+  this.router.navigate(['/form-question=2&sympthomId=1']);
 }
     
 

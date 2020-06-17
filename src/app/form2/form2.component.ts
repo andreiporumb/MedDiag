@@ -25,15 +25,40 @@ export class Form2Component implements OnInit {
   onContinue(){
 console.log(this.selectedValue);
 if(this.selectedValue==1)
-{
+{  
+  if(sessionStorage["Answer_2"]==undefined){
+      sessionStorage.setItem("Answer_2","LessThan3Weeks");
+
+  }
+  else{
+    sessionStorage.setItem("Answer_22","LessThan3Weeks");
+
+  }
+
   this.router.navigate(['/form-question=3&sympthomId=1']);
 }
 if(this.selectedValue==2)
 {
+  if(sessionStorage["Answer_2"]==undefined){
+    sessionStorage.setItem("Answer_2","Between 3 and 8 weeks");
+
+}
+else{
+  sessionStorage.setItem("Answer_22","Between 3 and 8 weeks");
+
+}
   this.router.navigate(['/form-question=3&sympthomId=1']);
 }
 if(this.selectedValue==3)
 {
+  if(sessionStorage["Answer_2"]==undefined){
+    sessionStorage.setItem("Answer_2","More than 8 weeks");
+
+}
+else{
+  sessionStorage.setItem("Answer_22","More than 8 weeks");
+
+}
   this.router.navigate(['/form-question=3&sympthomId=1']);
 }
 

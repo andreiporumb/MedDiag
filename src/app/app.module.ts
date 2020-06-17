@@ -28,7 +28,12 @@ import { Form4Component } from './form4/form4.component';
 import { Form5Component } from './form5/form5.component';
 import { Form22Component } from './form22/form22.component';
 import { Form222HeartAttackComponent } from './form222-heart-attack/form222-heart-attack.component';
-import { Form222WetCoughComponent } from './form222-wet-cough/form222-wet-cough.component'
+import { Form222WetCoughComponent } from './form222-wet-cough/form222-wet-cough.component';
+import { Form2222VeinsComponent } from './form2222-veins/form2222-veins.component';
+import { Form2222FeverComponent } from './form2222-fever/form2222-fever.component';
+import { SympthomRecapComponent } from './sympthom-recap/sympthom-recap.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 
@@ -60,7 +65,10 @@ const appRoutes: Routes = [ { path: 'diagnose', component: DiagnoseComponent }];
     Form5Component,
     Form22Component,
     Form222HeartAttackComponent,
-    Form222WetCoughComponent
+    Form222WetCoughComponent,
+    Form2222VeinsComponent,
+    Form2222FeverComponent,
+    SympthomRecapComponent
   ],
   imports: [
     BrowserModule,
@@ -68,6 +76,7 @@ const appRoutes: Routes = [ { path: 'diagnose', component: DiagnoseComponent }];
     NgbModule,
     Ng2SearchPipeModule,
     FormsModule,
+
     HighlightModule.forRoot({
       languages: hljsLanguages
     }),
@@ -75,7 +84,8 @@ const appRoutes: Routes = [ { path: 'diagnose', component: DiagnoseComponent }];
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
     ),
-    FontAwesomeModule
+    FontAwesomeModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

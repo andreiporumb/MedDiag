@@ -13,7 +13,10 @@ import { Form4Component} from './form4/form4.component';
 import { Form5Component} from './form5/form5.component';
 import { Form22Component} from './form22/form22.component';
 import { Form222HeartAttackComponent} from './form222-heart-attack/form222-heart-attack.component';
-import { Form222WetCoughComponent} from './form222-wet-cough/form222-wet-cough.component'
+import { Form222WetCoughComponent} from './form222-wet-cough/form222-wet-cough.component';
+import { Form2222VeinsComponent} from './form2222-veins/form2222-veins.component';
+import { Form2222FeverComponent} from './form2222-fever/form2222-fever.component';
+import { SympthomRecapComponent} from './sympthom-recap/sympthom-recap.component';
 
 
 
@@ -31,63 +34,82 @@ const routes: Routes = [
   {
     path:'diagnose',
     component: DiagnoseComponent,
-    canActivate: [AuthGuard]
+    //canActivate: [AuthGuard]
   },
   {
     path:'gender-age',
     component: SexchooseComponent,
-    canActivate: [AuthGuard]
+    //canActivate: [AuthGuard]
   },
   {
     path:'symptom-choose',
     component: SearchSymptomComponent,
-    canActivate: [AuthGuard]
+    //canActivate: [AuthGuard]
   },
   {
     path:'form-question=1&sympthomId=2',
     component: FormComponent,
-    canActivate: [AuthGuard]
+    //canActivate: [AuthGuard]
   }
   ,
   {
     path:'form-question=2&sympthomId=1',
     component: Form2Component,
-    canActivate: [AuthGuard]
+    //canActivate: [AuthGuard]
   }
   ,
   {
     path:'form-question=2&sympthomId=2',
     component: Form3Component,
-    canActivate: [AuthGuard]
+    //canActivate: [AuthGuard]
   }
   ,
   {
     path:'form-question=2&sympthomId=3',
     component: Form4Component,
-    canActivate: [AuthGuard]
+    //canActivate: [AuthGuard]
   }
   ,
   {
     path:'form-question=2&sympthomId=4',
     component: Form5Component,
-    canActivate: [AuthGuard]
+    //canActivate: [AuthGuard]
   }
   ,
   {
     path:'form-question=3&sympthomId=1',
     component: Form22Component,
-    canActivate: [AuthGuard]
+    //canActivate: [AuthGuard]
   },
   {
     path:'form-question=4&sympthomId=1',
     component: Form222HeartAttackComponent,
-    canActivate: [AuthGuard]
+    //canActivate: [AuthGuard]
   },
   {
     path:'form-question=4&sympthomId=2',
     component: Form222WetCoughComponent,
-    canActivate: [AuthGuard]
+    //canActivate: [AuthGuard]
+  },
+  {
+    path:'form-question=5&sympthomId=1',
+    component: Form2222VeinsComponent,
+    //canActivate: [AuthGuard]
+  },
+  {
+    path:'form-question=5&sympthomId=2',
+    component: Form2222FeverComponent,
+    //canActivate: [AuthGuard]
   }
+  ,
+  {
+    path:'sympthom-recap',
+    component: SympthomRecapComponent,
+    //canActivate: [AuthGuard]
+  }
+  
+  
+  
   
 ];
 

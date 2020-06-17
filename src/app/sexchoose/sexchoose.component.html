@@ -1,8 +1,8 @@
 
-    <div class="card">
+   <form name="myForm"> <div class="card">
         <h2 class="heading">I'am a</h2>  
         
-        <input maxlength='3' value=''/>
+        <input maxlength='3' value='18' name="user" ng-model="user" required/>
         <h3 class="heading">Years old</h3>  
 
         <div class="radio-buttons">
@@ -14,7 +14,7 @@
          </label>
         </div>
       
-        <a routerLink = "/symptom-choose" >
+        <a routerLink = "/symptom-choose" ng-disabled="document.myForm.user.value==''" >
             <svg class="icon-arrow before">
                 <use xlink:href="#arrow"></use>
             </svg>
@@ -95,3 +95,4 @@
       </div>
       
 
+</form>

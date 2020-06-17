@@ -25,20 +25,24 @@ export class Form4Component implements OnInit {
   onContinue(){
 console.log(this.selectedValue);
 if(this.selectedValue==1)
-{
+{  sessionStorage.setItem("Answer_2","Soft");
+
   this.router.navigate(['/form-question=2&sympthomId=1']);
 }
 if(this.selectedValue==2)
-{
-  this.router.navigate(['/form-question=2&sympthomId=2']);
+{  sessionStorage.setItem("Answer_2","Mild");
+
+  this.router.navigate(['/form-question=2&sympthomId=1']);
 }
 if(this.selectedValue==3)
-{
-  this.router.navigate(['/form-question=2&sympthomId=3']);
+{  sessionStorage.setItem("Answer_2","Strong");
+
+  this.router.navigate(['/form-question=2&sympthomId=1']);
 }
 if(this.selectedValue==4)
-{
-  this.router.navigate(['/form-question=2&sympthomId=4']);
+{  sessionStorage.setItem("Answer_2","Unbearable");
+
+  this.router.navigate(['/form-question=2&sympthomId=1']);
 }
     
 

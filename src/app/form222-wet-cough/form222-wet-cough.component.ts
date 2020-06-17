@@ -26,11 +26,21 @@ export class Form222WetCoughComponent implements OnInit {
 console.log(this.selectedValue);
 if(this.selectedValue==1)
 {
-  this.router.navigate(['/form-question=4&sympthomId=1']);
+  sessionStorage.setItem("Answer_4","The mucus is thick yellow or green");
+
+  this.router.navigate(['/form-question=5&sympthomId=2']);
 }
 if(this.selectedValue==2)
 {
-  this.router.navigate(['/form-question=4&sympthomId=2']);
+  sessionStorage.setItem("Answer_4","The mucus is pink and frothy");
+
+  this.router.navigate(['/form-question=5&sympthomId=2']);
+}
+if(this.selectedValue==3)
+{
+  sessionStorage.setItem("Answer_4","Often comes in the morning");
+
+  this.router.navigate(['/form-question=5&sympthomId=2']);
 }
 
 

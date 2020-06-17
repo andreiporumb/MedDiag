@@ -26,18 +26,22 @@ export class FormComponent implements OnInit {
 console.log(this.selectedValue);
 if(this.selectedValue==1)
 {
+  sessionStorage.setItem("Answer_1","RunnyNose");
   this.router.navigate(['/form-question=2&sympthomId=1']);
 }
 if(this.selectedValue==2)
 {
+  sessionStorage.setItem("Answer_1","ShortnessOfBreath");
   this.router.navigate(['/form-question=2&sympthomId=2']);
 }
 if(this.selectedValue==3)
 {
+  sessionStorage.setItem("Answer_1","Headache");
   this.router.navigate(['/form-question=2&sympthomId=3']);
 }
 if(this.selectedValue==4)
 {
+  sessionStorage.setItem("Answer_1","Fever");
   this.router.navigate(['/form-question=2&sympthomId=4']);
 }
     
