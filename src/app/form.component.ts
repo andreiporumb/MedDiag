@@ -27,21 +27,29 @@ console.log(this.selectedValue);
 if(this.selectedValue==1)
 {
   sessionStorage.setItem("Answer_1","RunnyNose");
+  sessionStorage.setItem("Arg_1","0");
+
   this.router.navigate(['/form-question=2&sympthomId=1']);
 }
 if(this.selectedValue==2)
 {
   sessionStorage.setItem("Answer_1","ShortnessOfBreath");
+  sessionStorage.setItem("Arg_1","1");
+
   this.router.navigate(['/form-question=2&sympthomId=2']);
 }
 if(this.selectedValue==3)
 {
   sessionStorage.setItem("Answer_1","Headache");
+  sessionStorage.setItem("Arg_1","2");
+
   this.router.navigate(['/form-question=2&sympthomId=3']);
 }
 if(this.selectedValue==4)
 {
   sessionStorage.setItem("Answer_1","Fever");
+  sessionStorage.setItem("Arg_1","3");
+
   this.router.navigate(['/form-question=2&sympthomId=4']);
 }
     

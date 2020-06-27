@@ -33,6 +33,7 @@ import { Form2222VeinsComponent } from './form2222-veins/form2222-veins.componen
 import { Form2222FeverComponent } from './form2222-fever/form2222-fever.component';
 import { SympthomRecapComponent } from './sympthom-recap/sympthom-recap.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -72,6 +73,7 @@ const appRoutes: Routes = [ { path: 'diagnose', component: DiagnoseComponent }];
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     NgbModule,
     Ng2SearchPipeModule,

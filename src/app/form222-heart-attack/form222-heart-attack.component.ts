@@ -27,12 +27,14 @@ console.log(this.selectedValue);
 if(this.selectedValue==1)
 {
  sessionStorage.setItem("Answer_4","Yes, I had a heart attack");
+ sessionStorage.setItem("Arg_4","0");
 
   this.router.navigate(['/form-question=5&sympthomId=1']);
 }
 if(this.selectedValue==2)
 {
   sessionStorage.setItem("Answer_4","No, I haven't got any heart attacks");
+  sessionStorage.setItem("Arg_4","1");
 
   this.router.navigate(['/form-question=5&sympthomId=1']);
 }

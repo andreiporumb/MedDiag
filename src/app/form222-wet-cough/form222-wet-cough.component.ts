@@ -27,18 +27,21 @@ console.log(this.selectedValue);
 if(this.selectedValue==1)
 {
   sessionStorage.setItem("Answer_4","The mucus is thick yellow or green");
+  sessionStorage.setItem("Arg_4","0");
 
   this.router.navigate(['/form-question=5&sympthomId=2']);
 }
 if(this.selectedValue==2)
 {
   sessionStorage.setItem("Answer_4","The mucus is pink and frothy");
+  sessionStorage.setItem("Arg_4","1");
 
   this.router.navigate(['/form-question=5&sympthomId=2']);
 }
 if(this.selectedValue==3)
 {
   sessionStorage.setItem("Answer_4","Often comes in the morning");
+  sessionStorage.setItem("Arg_4","2");
 
   this.router.navigate(['/form-question=5&sympthomId=2']);
 }

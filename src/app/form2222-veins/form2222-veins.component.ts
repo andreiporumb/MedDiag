@@ -27,12 +27,14 @@ console.log(this.selectedValue);
 if(this.selectedValue==1)
 {
   sessionStorage.setItem("Answer_5","Yes, I have noticed a distension or thickening of the veins on my neck");
+  sessionStorage.setItem("Arg_5","0");
 
   this.router.navigate(['/sympthom-recap']);
 }
 if(this.selectedValue==2)
 {
   sessionStorage.setItem("Answer_5","No, I haven't noticed a distension or thickening of the veins on my neck");
+  sessionStorage.setItem("Arg_5","1");
 
   this.router.navigate(['/sympthom-recap']);
 }

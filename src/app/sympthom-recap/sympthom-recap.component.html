@@ -1,5 +1,6 @@
-
+<div class="loader" *ngIf="edited"></div>
 <div class="courses-container container">
+
     <div class="course">
           <div class="course-preview">
               <h6>Cough</h6>
@@ -54,7 +55,7 @@
       </div>
       
       <!-- twitter -->
-              <button class="btn" (click)="clickDelay()">Diagnose !</button>
+              <button class="btn" (click)="saveTodos()">Diagnose !</button>
           </div>
       </div>
   </div>

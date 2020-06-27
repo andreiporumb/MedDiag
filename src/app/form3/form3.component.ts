@@ -27,24 +27,28 @@ console.log(this.selectedValue);
 if(this.selectedValue==1)
 {
   sessionStorage.setItem("Answer_2","ItStartedOrGodWorseWithinTheLastHour");
+  sessionStorage.setItem("Arg_2","0");
 
   this.router.navigate(['/form-question=2&sympthomId=1']);
 }
 if(this.selectedValue==2)
 {
   sessionStorage.setItem("Answer_2","ItStartedOrGotWorseMoreThan1HourAndLessThan24Hours");
+  sessionStorage.setItem("Arg_2","1");
 
   this.router.navigate(['/form-question=2&sympthomId=2']);
 }
 if(this.selectedValue==3)
 {
   sessionStorage.setItem("Answer_2","ForMoreThan1DayAndLessThan4Weeks");
+  sessionStorage.setItem("Arg_2","2");
 
   this.router.navigate(['/form-question=2&sympthomId=3']);
 }
 if(this.selectedValue==4)
 {
   sessionStorage.setItem("Answer_2","ForMoreThan4Weeks");
+  sessionStorage.setItem("Arg_2","3");
 
   this.router.navigate(['/form-question=2&sympthomId=4']);
 }

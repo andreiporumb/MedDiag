@@ -27,13 +27,15 @@ export class Form2222FeverComponent implements OnInit {
     if(this.selectedValue==1)
     {
       sessionStorage.setItem("Answer_5","Yes, I have a fever");
-    
+      sessionStorage.setItem("Arg_5","0");
+
       this.router.navigate(['/sympthom-recap']);
     }
     if(this.selectedValue==2)
     {
       sessionStorage.setItem("Answer_5","No, I don't have a fever");
-    
+      sessionStorage.setItem("Arg_5","1");
+
       this.router.navigate(['/sympthom-recap']);
     }
   
