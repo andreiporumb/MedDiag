@@ -34,8 +34,11 @@ import { Form2222FeverComponent } from './form2222-fever/form2222-fever.componen
 import { SympthomRecapComponent } from './sympthom-recap/sympthom-recap.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { DiagnosticComponent } from './diagnostic/diagnostic.component';
 
-
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from '../environments/environment';
 
 
 export function hljsLanguages() {
@@ -69,10 +72,13 @@ const appRoutes: Routes = [ { path: 'diagnose', component: DiagnoseComponent }];
     Form222WetCoughComponent,
     Form2222VeinsComponent,
     Form2222FeverComponent,
-    SympthomRecapComponent
+    SympthomRecapComponent,
+    DiagnosticComponent
   ],
   imports: [
     BrowserModule,
+    AngularFireModule.initializeApp(environment.firebase),
+ 	  AngularFirestoreModule,
     HttpClientModule,
     AppRoutingModule,
     NgbModule,

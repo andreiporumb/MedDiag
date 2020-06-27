@@ -100,8 +100,9 @@ public edited = false;
        url += '&arg5=' + this.arg5;
        
        var x = this.http.get(url).subscribe(data => {
-            console.log(data);
-         })
+            sessionStorage.setItem('Diagnostic', data[0]);
+            this.router.navigate(["/diagnostic"]);
+         }, err => alert('CORS Error, please activate CORS in your browser :)'))
      
       //  from( // wrap the fetch in a from if you need an rxjs Observable
       //    fetch(

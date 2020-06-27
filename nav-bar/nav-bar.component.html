@@ -58,7 +58,7 @@
               <div class="dropdown-menu dropdown-menu-left" ngbDropdownMenu>
                 <!-- Show the user's full name from the id token here -->
                 <div class="dropdown-header" *ngIf="profile">
-                  {{ profile.name }}
+                  {{ profile.name }}  <script>sessionStorage.setItem('userProfile', profile.name)</script>
                 </div>
                 <a
                   routerLink="/profile"
