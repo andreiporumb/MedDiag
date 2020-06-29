@@ -19,6 +19,7 @@ import { Form2222FeverComponent} from './form2222-fever/form2222-fever.component
 import { SympthomRecapComponent} from './sympthom-recap/sympthom-recap.component';
 import { DiagnosticComponent} from './diagnostic/diagnostic.component';
 import { DiagnosticListComponent} from './diagnostic-list/diagnostic-list.component';
+import { StatisticsComponent} from './statistics/statistics.component';
 
 
 const routes: Routes = [
@@ -117,6 +118,11 @@ const routes: Routes = [
   {
     path:'diagnostic-list',
     component: DiagnosticListComponent,
+    //canActivate: [AuthGuard]
+  },
+  {
+    path:'statistics',
+    component: StatisticsComponent,
     //canActivate: [AuthGuard]
   }
 
