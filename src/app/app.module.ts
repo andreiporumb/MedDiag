@@ -39,6 +39,7 @@ import { DiagnosticComponent } from './diagnostic/diagnostic.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
+import { DiagnosticListComponent } from './diagnostic-list/diagnostic-list.component';
 
 
 export function hljsLanguages() {
@@ -73,7 +74,8 @@ const appRoutes: Routes = [ { path: 'diagnose', component: DiagnoseComponent }];
     Form2222VeinsComponent,
     Form2222FeverComponent,
     SympthomRecapComponent,
-    DiagnosticComponent
+    DiagnosticComponent,
+    DiagnosticListComponent
   ],
   imports: [
     BrowserModule,

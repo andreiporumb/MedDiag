@@ -18,6 +18,7 @@ import { Form2222VeinsComponent} from './form2222-veins/form2222-veins.component
 import { Form2222FeverComponent} from './form2222-fever/form2222-fever.component';
 import { SympthomRecapComponent} from './sympthom-recap/sympthom-recap.component';
 import { DiagnosticComponent} from './diagnostic/diagnostic.component';
+import { DiagnosticListComponent} from './diagnostic-list/diagnostic-list.component';
 
 
 const routes: Routes = [
@@ -112,14 +113,13 @@ const routes: Routes = [
     component: DiagnosticComponent,
     //canActivate: [AuthGuard]
   }
+  ,
+  {
+    path:'diagnostic-list',
+    component: DiagnosticListComponent,
+    //canActivate: [AuthGuard]
+  }
 
-
-
-  
-  
-  
-  
-  
 ];
 
 @NgModule({

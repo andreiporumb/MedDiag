@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/auth/auth.service';
 import { FirebaseService } from 'src/app/firebase.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -12,7 +13,7 @@ export class DiagnosticComponent implements OnInit {
   diagnosticId: string;
   profileJson: string = null;
 
-  constructor(public auth: AuthService, public firebase: FirebaseService) { }
+  constructor(public auth: AuthService, public firebase: FirebaseService, private router: Router) { }
 
   ngOnInit() {
      this.diagnosticId = sessionStorage.getItem("Diagnostic");
@@ -36,8 +37,10 @@ export class DiagnosticComponent implements OnInit {
       'diagnostic': 'cough',
       'user': parsedJSON.email
     };
-    console.log(this.profileJson);
+    sessionStorage.setItem('userEmail', parsedJSON.email);
     this.firebase.createDiagnostic(json);
+    this.router.navigate(['/']);
+
   }
 
 }

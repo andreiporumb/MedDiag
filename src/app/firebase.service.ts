@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
+import { map, first } from 'rxjs/operators';
 
 
 @Injectable({
@@ -17,7 +18,16 @@ export class FirebaseService {
   }
 
   getDiagnostics(){
-    return this.db.collection('diagnostics').snapshotChanges();
-
+    return this.db.collection('diagnostics').snapshotChanges() .pipe(
+      map((snaps) =>
+        snaps.map((snap) => {
+          return new Object({
+            id: snap.payload.doc.id,
+            ...(snap.payload.doc.data() as {})
+          });
+        })
+      ),
+      first()
+    );;
   }
 }

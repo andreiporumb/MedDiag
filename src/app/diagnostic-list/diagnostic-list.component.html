@@ -1,0 +1,25 @@
+<!-- <div class="list-group" *ngFor="let diagnostic of diagnostics | async">
+    {{ diagnostic.diagnostic  }}
+
+  </div> -->
+
+  <div class="container">
+	<table>
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Diagnostic</th>
+				<th>eMail</th>
+				
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let diagnostic of diagnostics | async">
+				<td>  {{ diagnostic.id  }}</td>
+				<td>  {{ diagnostic.diagnostic  }}</td>
+				<td>  {{ diagnostic.user  }}</td>
+            </tr>
+		
+		</tbody>
+	</table>
+</div>
