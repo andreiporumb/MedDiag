@@ -32,7 +32,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
     "angular-material": "^1.1.21",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "firebase": "^7.15.5",
     "ng2-search-filter": "^0.5.1",
     "ngx-highlightjs": "^3.0.3",
